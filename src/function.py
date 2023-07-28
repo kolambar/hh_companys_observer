@@ -1,4 +1,4 @@
-def ask_for_adding_employer(list_of_employers):
+def ask_for_adding_employer(list_of_employers: list) -> None:
     """Спрашивает нужно ли добавить id и добавляет их в список"""
     answer = input(
         'Вы хотите добавить id компании к списку для отслеживания? Напишите либо нет, либо id.\n').strip().lower()
