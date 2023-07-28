@@ -25,7 +25,7 @@ class HhApiAsker:
         return all_vacancies
 
     @staticmethod
-    def get_company(employer):
+    def get_employers(employer):
         """
         Подключается к HeadHunter и получает вакансии нужных работодателей
         """

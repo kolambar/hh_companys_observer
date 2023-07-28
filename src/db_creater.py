@@ -64,7 +64,7 @@ def create_vacancies_table(cur) -> None:
     """Создает таблицу vacancies."""
     cur.execute("""
                 CREATE TABLE IF NOT EXISTS vacancies (
-                vacancy_id SERIAL PRIMARY KEY,
+                vacancy_id int GENERATED ALWAYS AS IDENTITY NOT NULL,
                 vacancy_name VARCHAR,
                 vacancy_salary_min INT,
                 vacancy_salary_max INT,
